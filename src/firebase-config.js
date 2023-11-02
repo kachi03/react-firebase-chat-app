@@ -5,13 +5,13 @@ import { getFirestore } from "@firebase/firestore";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBw8kPQkxNvVY2cB6ghVc20FlxhP4e_Xs4",
-  authDomain: "testproj-531d7.firebaseapp.com",
-  projectId: "testproj-531d7",
-  storageBucket: "testproj-531d7.appspot.com",
-  messagingSenderId: "705585244276",
-  appId: "1:705585244276:web:6905459d1c0800f7ba0921",
-  measurementId: "G-KWJSWQRNV0"
+  apiKey: "AIzaSyBx9K64772omA1127i01rp_o5Aey4_eTvw",
+  authDomain: "mainchat-6648d.firebaseapp.com",
+  projectId: "mainchat-6648d",
+  storageBucket: "mainchat-6648d.appspot.com",
+  messagingSenderId: "958777892753",
+  appId: "1:958777892753:web:4e26d2c46ba428aff6c430",
+  measurementId: "G-SH7B93MVLN"
 };
 
 // Initialize Firebase
