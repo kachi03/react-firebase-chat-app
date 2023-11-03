@@ -1,3 +1,7 @@
+//wideChat/src/components/AppWrapper.js
+//is for basic UI features including the app name header
+//and the sign out button for the user
+
 import { auth } from "../firebase-config.js";
 import { signOut } from "firebase/auth";
 

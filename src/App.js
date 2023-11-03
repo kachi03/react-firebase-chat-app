@@ -12,8 +12,8 @@ function ChatApp() {
   const [isInChat, setIsInChat] = useState(null);
   const [room, setRoom] = useState("");
 
-  if (!isAuth) {
-    return (
+  if (!isAuth) { //if the user is not authenticated,
+    return (    //have them authenticate
       <AppWrapper
         isAuth={isAuth}
         setIsAuth={setIsAuth}
@@ -24,11 +24,12 @@ function ChatApp() {
     );
   }
 
-  return (
+  return ( //if the user is authenticated display room query
     <AppWrapper isAuth={isAuth} setIsAuth={setIsAuth} setIsInChat={setIsInChat}>
-      {!isInChat ? (
+      {!isInChat ? ( //if chat attribute is undefined, request chat name query
         <div className="room">
-          <label> Type room name: </label>
+          <label> Type room name:</label>
+          <label>Main room: wideMain</label>
           <input onChange={(e) => setRoom(e.target.value)} />
           <button
             onClick={() => {
@@ -38,8 +39,8 @@ function ChatApp() {
             Enter Chat
           </button>
         </div>
-      ) : (
-        <Chat room={room} />
+      ) : ( //else, if the chat attributed is defined
+        <Chat room={room} /> //load that room
       )}
     </AppWrapper>
   );
